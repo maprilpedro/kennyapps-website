@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -217,9 +218,13 @@ export default function PracticePage() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-[#0C1B2C]/90 backdrop-blur-md border-b border-gray-200 dark:border-[#142636] transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/practice" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-[#9056A3] flex items-center justify-center">
-              <GuitarIcon className="w-5 h-5 text-white" />
-            </div>
+            <Image
+              src={isDark ? "/icon-dark.png" : "/icon-light.png"}
+              alt="Kenny Practice"
+              width={32}
+              height={32}
+              className="rounded-lg"
+            />
             <span className="text-xl font-semibold text-[#0C1B2C] dark:text-white">
               Kenny Practice
             </span>
@@ -602,9 +607,13 @@ export default function PracticePage() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-[#9056A3] flex items-center justify-center">
-                <GuitarIcon className="w-5 h-5 text-white" />
-              </div>
+              <Image
+                src={isDark ? "/icon-dark.png" : "/icon-light.png"}
+                alt="Kenny Practice"
+                width={32}
+                height={32}
+                className="rounded-lg"
+              />
               <span className="text-lg font-semibold text-[#0C1B2C] dark:text-white">
                 Kenny Practice
               </span>

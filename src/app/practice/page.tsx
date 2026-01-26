@@ -12,6 +12,7 @@ function GuitarIcon({ className }: { className?: string }) {
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
+      aria-hidden="true"
     >
       <path d="M19.5 3.5L20.5 4.5M20.5 4.5L21.5 3.5M20.5 4.5L19.5 5.5M20.5 4.5L21.5 5.5" />
       <path d="M17 7L14.5 9.5" />
@@ -29,6 +30,7 @@ function ClockIcon({ className }: { className?: string }) {
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
+      aria-hidden="true"
     >
       <circle cx="12" cy="12" r="9" />
       <path d="M12 6v6l4 2" />
@@ -44,6 +46,7 @@ function SparklesIcon({ className }: { className?: string }) {
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
+      aria-hidden="true"
     >
       <path d="M12 3L13.5 8.5L19 10L13.5 11.5L12 17L10.5 11.5L5 10L10.5 8.5L12 3Z" />
       <path d="M19 15L19.5 17L21.5 17.5L19.5 18L19 20L18.5 18L16.5 17.5L18.5 17L19 15Z" />
@@ -59,6 +62,7 @@ function CheckIcon({ className }: { className?: string }) {
       fill="none"
       stroke="currentColor"
       strokeWidth="2"
+      aria-hidden="true"
     >
       <path d="M5 13l4 4L19 7" />
     </svg>
@@ -67,7 +71,7 @@ function CheckIcon({ className }: { className?: string }) {
 
 function AppleIcon({ className }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
     </svg>
   );
@@ -81,6 +85,7 @@ function DevicesIcon({ className }: { className?: string }) {
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
+      aria-hidden="true"
     >
       <rect x="2" y="4" width="14" height="10" rx="1" />
       <path d="M6 18h6" />
@@ -99,6 +104,7 @@ function CloudSyncIcon({ className }: { className?: string }) {
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
+      aria-hidden="true"
     >
       <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
       <path d="M12 12v9" />
@@ -115,6 +121,7 @@ function SlidersIcon({ className }: { className?: string }) {
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
+      aria-hidden="true"
     >
       <path d="M4 21v-7" />
       <path d="M4 10V3" />
@@ -137,6 +144,7 @@ function ChartIcon({ className }: { className?: string }) {
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
+      aria-hidden="true"
     >
       <path d="M3 3v18h18" />
       <path d="M18 17V9" />
@@ -154,6 +162,7 @@ function SunIcon({ className }: { className?: string }) {
       fill="none"
       stroke="currentColor"
       strokeWidth="2"
+      aria-hidden="true"
     >
       <circle cx="12" cy="12" r="5" />
       <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
@@ -169,6 +178,7 @@ function MoonIcon({ className }: { className?: string }) {
       fill="none"
       stroke="currentColor"
       strokeWidth="2"
+      aria-hidden="true"
     >
       <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
     </svg>
@@ -202,7 +212,7 @@ export default function PracticePage() {
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-[#0C1B2C] transition-colors duration-300">
+    <main className="min-h-screen bg-white dark:bg-[#0C1B2C] transition-colors duration-300">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-[#0C1B2C]/90 backdrop-blur-md border-b border-gray-200 dark:border-[#142636] transition-colors duration-300">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -217,13 +227,13 @@ export default function PracticePage() {
           <div className="flex items-center gap-6">
             <Link
               href="#features"
-              className="text-[#3257AD] hover:text-[#0C1B2C] dark:hover:text-white transition-colors"
+              className="text-[#3257AD] hover:text-[#0C1B2C] dark:hover:text-white transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9056A3] focus-visible:ring-offset-2"
             >
               Features
             </Link>
             <Link
               href="#download"
-              className="text-[#3257AD] hover:text-[#0C1B2C] dark:hover:text-white transition-colors"
+              className="text-[#3257AD] hover:text-[#0C1B2C] dark:hover:text-white transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9056A3] focus-visible:ring-offset-2"
             >
               Download
             </Link>
@@ -250,7 +260,7 @@ export default function PracticePage() {
             Available on Mac and iOS
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-[#0C1B2C] dark:text-white leading-tight mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold text-[#0C1B2C] dark:text-white leading-tight mb-6 text-balance">
             Practice Guitar.
             <br />
             <span className="text-[#9056A3]">Just Play.</span>
@@ -264,14 +274,14 @@ export default function PracticePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#download"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#9056A3] text-white font-semibold text-lg hover:bg-[#7a4a8a] dark:hover:bg-[#a066b3] transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#9056A3] text-white font-semibold text-lg hover:bg-[#7a4a8a] dark:hover:bg-[#a066b3] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9056A3] focus-visible:ring-offset-2"
             >
               <AppleIcon className="w-5 h-5" />
               Download Free
             </a>
             <a
               href="#features"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border-2 border-[#3257AD] text-[#3257AD] font-semibold text-lg hover:border-[#9056A3] hover:text-[#9056A3] transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border-2 border-[#3257AD] text-[#3257AD] font-semibold text-lg hover:border-[#9056A3] hover:text-[#9056A3] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9056A3] focus-visible:ring-offset-2"
             >
               Learn More
             </a>
@@ -394,7 +404,7 @@ export default function PracticePage() {
                 icon: SparklesIcon,
                 title: "Mood-Adaptive Sessions",
                 description:
-                  "Feeling amazing? Get challenged. Just getting by? Maintenance mode. No judgment, just the right practice.",
+                  "Feeling amazing? Get challenged. Just getting by? Maintenance mode. No judgment — just the right practice.",
               },
               {
                 icon: GuitarIcon,
@@ -518,7 +528,7 @@ export default function PracticePage() {
               </p>
               <a
                 href="#"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#0C1B2C] dark:bg-white text-white dark:text-[#0C1B2C] font-semibold hover:bg-[#1a2f42] dark:hover:bg-gray-100 transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#0C1B2C] dark:bg-white text-white dark:text-[#0C1B2C] font-semibold hover:bg-[#1a2f42] dark:hover:bg-gray-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9056A3] focus-visible:ring-offset-2"
               >
                 <AppleIcon className="w-5 h-5" />
                 Mac App Store
@@ -534,6 +544,7 @@ export default function PracticePage() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="1.5"
+                  aria-hidden="true"
                 >
                   <rect x="5" y="2" width="14" height="20" rx="2" />
                   <path d="M12 18h.01" />
@@ -548,7 +559,7 @@ export default function PracticePage() {
               </p>
               <a
                 href="#"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#0C1B2C] dark:bg-white text-white dark:text-[#0C1B2C] font-semibold hover:bg-[#1a2f42] dark:hover:bg-gray-100 transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#0C1B2C] dark:bg-white text-white dark:text-[#0C1B2C] font-semibold hover:bg-[#1a2f42] dark:hover:bg-gray-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9056A3] focus-visible:ring-offset-2"
               >
                 <AppleIcon className="w-5 h-5" />
                 App Store
@@ -577,7 +588,7 @@ export default function PracticePage() {
             </p>
             <a
               href="#download"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#9056A3] text-white font-semibold text-lg hover:bg-[#7a4a8a] dark:hover:bg-[#a066b3] transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#9056A3] text-white font-semibold text-lg hover:bg-[#7a4a8a] dark:hover:bg-[#a066b3] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9056A3] focus-visible:ring-offset-2"
             >
               <AppleIcon className="w-5 h-5" />
               Download Free
@@ -599,26 +610,26 @@ export default function PracticePage() {
               </span>
             </div>
 
-            <div className="flex items-center gap-6 text-[#3257AD]">
+            <nav aria-label="Footer navigation" className="flex items-center gap-6 text-[#3257AD]">
               <Link
                 href="/privacy"
-                className="hover:text-[#0C1B2C] dark:hover:text-white transition-colors"
+                className="hover:text-[#0C1B2C] dark:hover:text-white transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9056A3] focus-visible:ring-offset-2"
               >
-                Privacy
+                Privacy Policy
               </Link>
               <Link
                 href="/terms"
-                className="hover:text-[#0C1B2C] dark:hover:text-white transition-colors"
+                className="hover:text-[#0C1B2C] dark:hover:text-white transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9056A3] focus-visible:ring-offset-2"
               >
-                Terms
+                Terms of Service
               </Link>
               <Link
                 href="#"
-                className="hover:text-[#0C1B2C] dark:hover:text-white transition-colors"
+                className="hover:text-[#0C1B2C] dark:hover:text-white transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9056A3] focus-visible:ring-offset-2"
               >
                 Support
               </Link>
-            </div>
+            </nav>
 
             <p className="text-[#3257AD] text-sm">
               © {new Date().getFullYear()} Kenny Apps. All rights reserved.
@@ -626,6 +637,6 @@ export default function PracticePage() {
           </div>
         </div>
       </footer>
-    </div>
+    </main>
   );
 }

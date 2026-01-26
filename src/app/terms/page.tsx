@@ -12,7 +12,7 @@ export default function TermsPage() {
       <div className="max-w-3xl mx-auto px-6 py-16">
         <Link
           href="/"
-          className="text-[var(--accent)] hover:underline mb-8 inline-block"
+          className="text-[var(--accent)] hover:underline mb-8 inline-block rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2"
         >
           ← Back to Home
         </Link>

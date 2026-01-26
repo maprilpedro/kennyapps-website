@@ -533,10 +533,15 @@ export default function PracticePage() {
               </p>
               <a
                 href="#"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#0C1B2C] dark:bg-white text-white dark:text-[#0C1B2C] font-semibold hover:bg-[#1a2f42] dark:hover:bg-gray-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9056A3] focus-visible:ring-offset-2"
+                className="inline-block hover:opacity-80 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9056A3] focus-visible:ring-offset-2 rounded-lg"
               >
-                <AppleIcon className="w-5 h-5" />
-                Mac App Store
+                <Image
+                  src="/appstore-mac.svg"
+                  alt="Download on the Mac App Store"
+                  width={157}
+                  height={40}
+                  className="dark:invert"
+                />
               </a>
             </div>
 
@@ -564,10 +569,15 @@ export default function PracticePage() {
               </p>
               <a
                 href="#"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#0C1B2C] dark:bg-white text-white dark:text-[#0C1B2C] font-semibold hover:bg-[#1a2f42] dark:hover:bg-gray-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9056A3] focus-visible:ring-offset-2"
+                className="inline-block hover:opacity-80 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9056A3] focus-visible:ring-offset-2 rounded-lg"
               >
-                <AppleIcon className="w-5 h-5" />
-                App Store
+                <Image
+                  src="/appstore-ios.svg"
+                  alt="Download on the App Store"
+                  width={120}
+                  height={40}
+                  className="dark:invert"
+                />
               </a>
             </div>
           </div>

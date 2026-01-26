@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy - Kenny Apps",
-  description: "Privacy policy for Kenny Advisor and other Kenny Apps products.",
+  description: "Privacy policy for Kenny Practice and other Kenny Apps products.",
 };
 
 export default function PrivacyPage() {
@@ -25,7 +25,7 @@ export default function PrivacyPage() {
           <h2 className="text-2xl font-semibold mb-4">Overview</h2>
           <p className="text-[var(--text-secondary)] leading-relaxed">
             Kenny Apps (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting your
-            privacy. This Privacy Policy explains how Kenny Advisor and our other
+            privacy. This Privacy Policy explains how Kenny Practice and our other
             applications handle your information.
           </p>
         </section>
@@ -33,7 +33,7 @@ export default function PrivacyPage() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Data Collection</h2>
           <p className="text-[var(--text-secondary)] leading-relaxed">
-            Kenny Advisor is designed with privacy in mind. The app stores your
+            Kenny Practice is designed with privacy in mind. The app stores your
             practice preferences and session history locally on your device. We do
             not collect, transmit, or store any personal data on external servers.
           </p>

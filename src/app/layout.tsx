@@ -8,42 +8,32 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Kenny Advisor - Practice Guitar. Just Play.",
+  title: "Kenny Apps",
   description:
-    "Select your time, pick your mood, and start playing. Kenny Advisor generates personalized guitar practice sessions for Mac and iOS.",
+    "Apps by Kenny. Thoughtfully designed software for Mac and iOS.",
   keywords: [
     "guitar practice",
     "practice app",
     "guitar learning",
     "music practice",
     "guitar exercises",
+    "mac apps",
+    "ios apps",
   ],
   metadataBase: new URL("https://kennyapps.com"),
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
-    title: "Kenny Advisor - Practice Guitar. Just Play.",
+    title: "Kenny Apps",
     description:
-      "Select your time, pick your mood, and start playing. Kenny Advisor generates personalized guitar practice sessions for Mac and iOS.",
+      "Apps by Kenny. Thoughtfully designed software for Mac and iOS.",
     url: "https://kennyapps.com",
     siteName: "Kenny Apps",
     type: "website",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Kenny Advisor - Guitar Practice App",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kenny Advisor - Practice Guitar. Just Play.",
+    title: "Kenny Apps",
     description:
-      "Select your time, pick your mood, and start playing. Kenny Advisor generates personalized guitar practice sessions for Mac and iOS.",
-    images: ["/og-image.png"],
+      "Apps by Kenny. Thoughtfully designed software for Mac and iOS.",
   },
   robots: {
     index: true,

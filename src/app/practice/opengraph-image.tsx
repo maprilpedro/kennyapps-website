@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Kenny Advisor - Practice Guitar. Just Play.";
+export const alt = "Kenny Practice - Practice Guitar. Just Play.";
 export const size = {
   width: 1200,
   height: 630,
@@ -44,7 +44,7 @@ export default async function Image() {
               fill="#9056A3"
             />
           </svg>
-          <span style={{ fontSize: 64, fontWeight: "bold" }}>Kenny Advisor</span>
+          <span style={{ fontSize: 64, fontWeight: "bold" }}>Kenny Practice</span>
         </div>
         <div
           style={{

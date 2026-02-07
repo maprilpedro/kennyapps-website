@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Terms of Service - Kenny Apps",
-  description: "Terms of service for Kenny Advisor and other Kenny Apps products.",
+  description: "Terms of service for Kenny Practice and other Kenny Apps products.",
 };
 
 export default function TermsPage() {
@@ -24,7 +24,7 @@ export default function TermsPage() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Acceptance of Terms</h2>
           <p className="text-[var(--text-secondary)] leading-relaxed">
-            By downloading, installing, or using Kenny Advisor or any other Kenny
+            By downloading, installing, or using Kenny Practice or any other Kenny
             Apps product, you agree to be bound by these Terms of Service.
           </p>
         </section>

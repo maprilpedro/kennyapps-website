@@ -8,6 +8,7 @@
   --background: #FFFFFF;
   --background-secondary: #F5F7FA;
   --card-background: #F0F2F5;
+  --card-hover: #E5E7EB;
   --foreground: #0C1B2C;
   --text-primary: #0C1B2C;
   --text-secondary: #3257AD;
@@ -21,18 +22,20 @@
   --background: #0C1B2C;
   --background-secondary: #0F2035;
   --card-background: #142636;
+  --card-hover: #1a2f42;
   --foreground: #FFFFFF;
   --text-primary: #FFFFFF;
   --text-secondary: #3257AD;
   --accent: #9056A3;
   --accent-hover: #a066b3;
-  --border: #1E3A5F;
+  --border: #142636;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-background-secondary: var(--background-secondary);
   --color-card: var(--card-background);
+  --color-card-hover: var(--card-hover);
   --color-foreground: var(--foreground);
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);

@@ -13,6 +13,7 @@ import {
   PhoneIcon,
 } from "@/components/icons";
 import ThemeToggle from "@/components/ThemeToggle";
+import PhoneCarousel from "@/components/PhoneCarousel";
 
 export default function PracticePage() {
   return (
@@ -103,94 +104,9 @@ export default function PracticePage() {
             <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 dark:bg-accent/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
 
             <div className="relative grid md:grid-cols-2 gap-12 items-center">
-              {/* App mockup — Session Preview screen */}
+              {/* App mockup — 3-screen carousel */}
               <div className="order-2 md:order-1">
-                <div className="relative mx-auto w-64 h-[520px] rounded-[3rem] bg-background border-4 border-gray-200 dark:border-text-secondary/30 shadow-2xl overflow-hidden transition-colors duration-300">
-                  <div className="px-4 pt-4 pb-3 h-full flex flex-col">
-                    {/* Nav bar */}
-                    <div className="flex items-center justify-between pt-7 mb-3">
-                      <span className="text-accent text-[11px]">
-                        {"‹ Back"}
-                      </span>
-                      <span className="text-text-primary text-[11px] font-semibold">
-                        Session Preview
-                      </span>
-                      <span className="text-text-secondary text-[11px]">
-                        {"⚙"}
-                      </span>
-                    </div>
-
-                    {/* Summary pills */}
-                    <div className="flex gap-1.5 mb-1.5">
-                      {[
-                        { icon: "⏱", value: "45 min" },
-                        { icon: "😊", value: "Good" },
-                        { icon: "≡", value: "5 exercises" },
-                      ].map((pill) => (
-                        <div
-                          key={pill.value}
-                          className="flex-1 bg-card rounded-lg py-1.5 text-center"
-                        >
-                          <div className="text-sm leading-none">
-                            {pill.icon}
-                          </div>
-                          <div className="text-text-primary text-[9px] font-semibold mt-1">
-                            {pill.value}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                    <p className="text-text-secondary text-[8px] text-center mb-2">
-                      Created just now
-                    </p>
-
-                    {/* Exercise list */}
-                    <div className="flex-1 space-y-1.5 overflow-hidden">
-                      {[
-                        { num: 1, icon: "🔥", name: "Pentatonic Box 1 Warm-up", cat: "Warm-up", time: "1:30", bg: "bg-[#E67E22]" },
-                        { num: 2, icon: "🕷️", name: "Inside Picking Spider", cat: "Spider Exercises", time: "1:30", bg: "bg-[#8E44AD]" },
-                        { num: 3, icon: "🎵", name: "Syncopation Basics", cat: "Rhythm Work", time: "8:30", bg: "bg-[#E74C3C]" },
-                        { num: 4, icon: "🎤", name: "Pentatonic Exploration", cat: "Improvisation", time: "8:30", bg: "bg-[#F39C12]" },
-                        { num: 5, icon: "🎸", name: "Moonshine", cat: "Pieces", time: "25 min", bg: "bg-accent" },
-                      ].map((ex) => (
-                        <div
-                          key={ex.num}
-                          className="flex items-center gap-2 bg-card rounded-lg px-2 py-1.5"
-                        >
-                          <div
-                            className={`w-5 h-5 rounded-full flex items-center justify-center text-[8px] font-bold text-white flex-shrink-0 ${ex.bg}`}
-                          >
-                            {ex.num}
-                          </div>
-                          <span className="text-[11px] flex-shrink-0">
-                            {ex.icon}
-                          </span>
-                          <div className="flex-1 min-w-0">
-                            <div className="text-accent text-[9px] font-semibold truncate">
-                              {ex.name}
-                            </div>
-                            <div className="text-text-secondary text-[7px]">
-                              {ex.cat}
-                            </div>
-                          </div>
-                          <div className="text-accent text-[9px] font-semibold flex-shrink-0">
-                            {ex.time}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-
-                    {/* Buttons */}
-                    <div className="mt-3 space-y-1.5 pb-1">
-                      <div className="bg-gradient-to-r from-accent to-[#7040B0] rounded-xl py-2 text-center text-white text-[11px] font-semibold shadow-lg shadow-accent/30">
-                        {"▶ Start Practice"}
-                      </div>
-                      <div className="border border-text-secondary/40 rounded-xl py-1.5 text-center text-text-secondary text-[9px]">
-                        {"↻ Generate New Session"}
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <PhoneCarousel />
               </div>
 
               {/* Text content */}
